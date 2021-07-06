@@ -1,0 +1,15 @@
+@font-face{
+    font-family: 'Gompyo';
+    src:url(/Gompyo-Bold.ttf) format('truetype')
+}
+body{
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Gompyo';
+    background-color: #032D3C;
+}
+/*타이틀 */
+/*로그인 버튼 */
+.classbtn {
+    border: none;
+    background-image: url(/img/login.jpeg);
+}

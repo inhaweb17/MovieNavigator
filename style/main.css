@@ -2,14 +2,21 @@
     font-family: 'Gompyo';
     src:url(/Gompyo-Bold.ttf) format('truetype')
 }
+
 body{
-    /*font-family: 'Pacifico', cursive;*/
-    font-family: 'Gompyo';
+    /*font-family: 'Pacifico', cursive; */
+    font-family: 'Gompyo'; 
     background-color: #032D3C;
 }
 /*타이틀 */
+#title {
+    color: #F4FF61;
+}
 /*로그인 버튼 */
-.classbtn {
-    border: none;
-    background-image: url(/img/login.jpeg);
+.loginbtn {
+    width: 100px;
+    height: 30px;
+    border-radius: 10%;
+    border-color: #A8FF3E;
+    color:#A8FF3E;
 }

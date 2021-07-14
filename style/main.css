@@ -2,21 +2,28 @@
     font-family: 'Gompyo';
     src:url(/Gompyo-Bold.ttf) format('truetype')
 }
+:root{
+    --logo-color: #F7FF56;
+    --green-color: #94FC13;
+    --background-color: #032D3C;
+    --puple-color: #AA26DA;
 
+}
 body{
     /*font-family: 'Pacifico', cursive; */
     font-family: 'Gompyo'; 
     background-color: #032D3C;
 }
-/*타이틀 */
-#title {
-    color: #F4FF61;
+/*홈로고 */
+#logo {
+    font-size: 50px;
+    color: var(--logo-color);
 }
 /*로그인 버튼 */
-.loginbtn {
+.login_btn {
     width: 100px;
     height: 30px;
     border-radius: 10%;
-    border-color: #A8FF3E;
-    color:#A8FF3E;
+    border-color: var(--green-color);
+    color: var(--green-color);
 }

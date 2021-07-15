@@ -2,6 +2,7 @@
     font-family: 'Gompyo';
     src:url(/Gompyo-Bold.ttf) format('truetype')
 }
+
 :root{
     --logo-color: #F7FF56;
     --green-color: #94FC13;
@@ -10,20 +11,50 @@
 
 }
 body{
-    /*font-family: 'Pacifico', cursive; */
     font-family: 'Gompyo'; 
     background-color: #032D3C;
 }
+/*숨김 class*/
+.hidden{
+    display: none;
+}
+
 /*홈로고 */
 #logo {
     font-size: 50px;
     color: var(--logo-color);
 }
 /*로그인 버튼 */
+
 .login_btn {
-    width: 100px;
-    height: 30px;
-    border-radius: 10%;
-    border-color: var(--green-color);
-    color: var(--green-color);
+    height: 34px;
+    width: 70px;
+    background: var(--background-color);
+    border: 1px solid var(--green-color);
+    border-radius: 4px;
+    align-items: center;
+    font-size: 14px;
+    color:var(--green-color);
+    box-sizing: border-box;
+}
+.login_btn:hover{
+    color: #fff;
+    background: var(--green-color) linear-gradient(#32FF6A,#27AA80);
+}
+/*mypage 버튼*/
+
+.mypage_btn {
+    height: 34px;
+    width: 70px;
+    background: var(--background-color);
+    border: 1px solid var(--puple-color);
+    border-radius: 4px;
+    align-items: center;
+    font-size: 14px;
+    color:var(--puple-color);
+    box-sizing: border-box;
+}
+.mypage_btn:hover{
+    color: #fff;
+    background: var(--puple-color) linear-gradient(#C355F5, #AA26DA);
 }

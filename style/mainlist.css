@@ -1,5 +1,81 @@
+@import url(./main.css);
 
-.title{
-    font-size: 50px;
-    color: #F1FA3C;
+header{
+    width: 100%;
+    border:1px solid var(--puple-color);
+    border-radius: 2px;
+    padding: 15px;
+    margin: 15px;
+}
+/*현재 상영작 랭크들 표기하는 곳 */
+#boxoffice_list div{
+    border: 4px solid var(--puple-color);
+    border-radius: 4px;
+    margin: 20px;
+    width: 200px;
+}
+#boxoffice_list div img{
+    width: 200px;
+}
+
+/*왼쪽 화살표 버튼*/
+.left_btn{
+    background-color: var(--background-color);
+    border: none;
+}
+.left_btn img:hover{
+    background-image: url('../img/left_btn_hover.svg');
+}
+.right_btn{
+    background-color: var(--background-color);
+    border: none;
+}
+.right_btn img:hover{
+    background-image: url('../img/right_btn_hover.svg');
+}
+
+/*search*/
+#search_box div{
+    border: 2px solid var(--puple-color);
+    margin: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#search_box img{
+    margin: 10px;
+}
+
+/*category*/
+
+#category img{
+    height: 100px;
+    width: 88px;
+    background-color: var(--background-color);
+}
+#category a{
+    color: red;
+}
+
+/*review*/
+#r1{
+    width: 60%;
+    height: 70px;
+    border: 3px solid var(--green-color);
+}
+#r2{
+    width: 60%;
+    height: 70px;
+    border: 3px solid var(--green-color);
+}
+#r3{
+    width: 60%;
+    height: 70px;
+    border: 3px solid var(--green-color);
+}
+.good{
+
+}
+.good img{
+    background-color: var(--background-color);
+    border-style: none;
 }

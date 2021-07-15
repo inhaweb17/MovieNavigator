@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="이자선">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1, minimum-scale=1">
     <title>MovieNavigator</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/main.css">
     <link rel="stylesheet" href="/style/mainlist.css">
 </head>
@@ -13,12 +15,12 @@
     <header>
         <div id="logo">MNavigator</div>
         <button class="login_btn">LOG IN</button>
-        <button class="mypage_btn hidden">MY PAGE</button>
+        <button class="mypage_btn">MY PAGE</button>
     </header>
     <section id="boxoffice_list">
-        <input type="button" class="left_btn"/>
+        <button class="left_btn" type="button"><img src="../img/left_btn.svg" alt="왼쪽 화살표"></button>
         <div id="m1">
-            <img alt="영화포스터1" src="/img/foster_ex.jpeg">
+            <img alt="영화포스터1" src="/img/foster_ex.jpeg ">
         </div>
         <div id="m2">
             <img alt="영화포스터2" src="/img/foster_ex.jpeg">
@@ -26,41 +28,41 @@
         <div id="m3">
             <img alt="영화포스터3" src="/img/foster_ex.jpeg">
         </div>
-        <input type="button" id="right_btn"/>
+        <button class="right_btn" type="button"><img src="../img/right_btn.svg" alt="오른쪽 화살표"></button>
     </section>
     <section id="search_box">
         <div>
-            <img />
+            <img src="../img/search.svg">
             <input type="search" placeholder="영화검색하기"/>
         </div>
     </section>
     <section id="category">
         <div class="now_link">
-            <img />
+            <img src="../img/light.svg" alt="조명">
             <a href="./nowMovie.html">#현재 상영작</a>
         </div>
         <div class="genre_link">
-            <img />
+            <img src="../img/light.svg" alt="조명">
             <a href="./genreMovie.html">#장르별 보기</a>
         </div>
     </section>
     <section id="review_list">
         <div>
-            <img />
+            <img src="../img/person.svg" alt="사람이미지">
             <div id="r1">
-
+                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
             </div>
         </div>
         <div>
-            <img />
+            <img src="../img/person.svg" alt="사람이미지">
             <div id="r2">
-
+                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
             </div>
         </div>
         <div>
-            <img />
+            <img src="../img/person.svg" alt="사람이미지">
             <div id="r3">
-
+                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
             </div>
         </div>
     </section>

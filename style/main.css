@@ -13,6 +13,7 @@
 body{
     font-family: 'Gompyo'; 
     background-color: #032D3C;
+    height: 1400px;
 }
 /*숨김 class*/
 .hidden{
@@ -27,7 +28,7 @@ body{
 /*로그인 버튼 */
 
 .login_btn {
-    height: 34px;
+    height: 38px;
     width: 70px;
     background: var(--background-color);
     border: 1px solid var(--green-color);
@@ -44,7 +45,7 @@ body{
 /*mypage 버튼*/
 
 .mypage_btn {
-    height: 34px;
+    height: 38px;
     width: 70px;
     background: var(--background-color);
     border: 1px solid var(--puple-color);

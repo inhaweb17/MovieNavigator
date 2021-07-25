@@ -14,28 +14,42 @@
 <body>
     <header>
         <div id="logo">MNavigator</div>
-        <button class="login_btn">LOG IN</button>
-        <button class="mypage_btn">MY PAGE</button>
+        <div class="header_container">
+            <button class="login_btn">LOG IN</button>
+            <button class="mypage_btn">MY PAGE</button>
+        </div>       
     </header>
-    <section id="boxoffice_list">
+
+    <section id="boxoffice">
         <button class="left_btn" type="button"><img src="../img/left_btn.svg" alt="왼쪽 화살표"></button>
-        <div id="m1">
-            <img alt="영화포스터1" src="/img/foster_ex.jpeg ">
-        </div>
-        <div id="m2">
-            <img alt="영화포스터2" src="/img/foster_ex.jpeg">
-        </div>
-        <div id="m3">
-            <img alt="영화포스터3" src="/img/foster_ex.jpeg">
+        <div class="boxoffice_list">
+            <div class="p0">
+
+            </div>
+            <div class="p1">
+
+            </div>
+            <div class="p2">
+
+            </div>
+            <div class="p3">
+
+            </div>
+            <div class="p4">
+
+            </div>
         </div>
         <button class="right_btn" type="button"><img src="../img/right_btn.svg" alt="오른쪽 화살표"></button>
     </section>
+
     <section id="search_box">
         <div>
             <img src="../img/search.svg">
             <input type="search" placeholder="영화검색하기"/>
+            <span><button class="s_submit">검색</button></span>
         </div>
     </section>
+
     <section id="category">
         <div class="now_link">
             <img src="../img/light.svg" alt="조명">
@@ -46,26 +60,41 @@
             <a href="./genreMovie.html">#장르별 보기</a>
         </div>
     </section>
+
     <section id="review_list">
-        <div>
+        <div class="review">
             <img src="../img/person.svg" alt="사람이미지">
             <div id="r1">
-                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
+                <p></p>
+                <div class="good">
+                    <img alt="좋아요이미지" src="../img/good.svg">
+                    <span>35</span>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="review">
             <img src="../img/person.svg" alt="사람이미지">
             <div id="r2">
-                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
+                <p></p>
+                <div class="good">
+                    <img alt="좋아요이미지" src="../img/good.svg">
+                    <span>23</span>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="review">
             <img src="../img/person.svg" alt="사람이미지">
             <div id="r3">
-                <button class="good"><img alt="좋아요이미지" src="../img/good.svg"></button>
+                <p></p>
+                <div class="good">
+                    <img alt="좋아요이미지" src="../img/good.svg">
+                    <span>12</span>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="/js/showRanking.js"></script>
     <script src="/js/mainlist.js"></script>
 </body>
 </html>

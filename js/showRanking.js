@@ -53,6 +53,7 @@ const movie_list = [
 
 const boxoffice_list = document.querySelector('.boxoffice_list');
 
+//영화 포스터 1위 부터 5위까지 보여지기 
 const showRanking = (movie_list, boxoffice_list) => {
     const left_btn = document.querySelector('.left_btn');
     const right_btn = document.querySelector('.right_btn');
@@ -63,7 +64,7 @@ const showRanking = (movie_list, boxoffice_list) => {
     const p4 = document.querySelector('.p4');
 
     const p_list = [p0,p1,p2,p3,p4];
-
+    //p0...p4까지 차례대로 방문해서 img를 저장한다 
     let p_index = [1,2,3,4,5];
     document.addEventListener('DOMContentLoaded', () => {
         for(let i =0; i<5; i++){
@@ -79,11 +80,45 @@ const showRanking = (movie_list, boxoffice_list) => {
         //처음 로드되었을 때 1등 2등 3등 4등 5등 순서대로 표기하기 위해서 zIndex를 활용해서 처리해준다
         for (let i =0; i < 5; i++) {
             p_list[i].querySelector('.poster' + String(p_index[i])).style.zIndex = '999';
-        } 
-        
+        }   
         
     });
 
-
+    //왼쪽 버튼을 클릭 시 1등 자리에 2등 포스터가 오는 방식이다 
+    left_btn.onclick = () => {
+        for(let i =0; i <5; i++){
+            p_list[i].querySelector('.poster' + String(p_index[i])).style.zIndex = '-1';
+            p_index[i] = plus(p_index[i]);
+            p_list[i].querySelector('.poster' + String(p_index[i])).style.zIndex = '999';
+        }
+    }
+    //오른쪽 버튼을 클릭 시 1 등 자리에 마지막 등수인 10등 포스터가 오는 방식이다 
+    right_btn.onclick = () => {
+        for(let i = 0; i <5; i++){
+            p_list[i].querySelector('.poster' + String(p_index[i])).style.zIndex = '-1';
+            p_index[i] = minus(p_index[i]);
+            p_list[i].querySelector('.poster' + String(p_index[i])).style.zIndex = '999';
+        }
+    }
+    //포스터가 총 10등까지 있으므로 10까지 갔을 경우 1로 바꾼다
+    function plus(e){
+        if (e == 10){
+            e = 1;
+        }
+        else{
+            e += 1;
+        }
+        return e;
+    }
+    //위와 같은 이유로 1일 경우 10으로 바꾼다 
+    function minus(e){
+        if (e == 1){
+            e = 10;
+        }
+        else{
+            e -= 1;
+        }
+        return e;
+    }
 }
 showRanking(movie_list, boxoffice_list);

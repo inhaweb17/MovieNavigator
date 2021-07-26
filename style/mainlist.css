@@ -4,14 +4,9 @@ body{
     
 }
 /*header */
-header{
-    position: relative;
-}
+
 .logo{
-    position:relative;
-    left: 30px;
-    z-index: 999;
-    top:15px;
+    position: relative;
 }
 .header_container{
     width: 87%;
@@ -21,7 +16,6 @@ header{
     position: relative;
     left: 90px;
     top: 20px;
-    z-index: 80;
 }
 
 
@@ -118,6 +112,11 @@ header{
     height: auto;
     max-width: 30px;
     max-height: 30px;
+}
+.movie_search{
+    width: 150px;
+    outline: none;
+    
 }
 .s_submit{
     height: 34px;

@@ -1,0 +1,57 @@
+@import url(./main.css);
+body{
+    height: 685px;
+}
+.body__container{
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 50px;
+    height: 600px;
+}
+header img{
+    width:auto;
+    height:auto;
+    max-width: 100px;
+    max-height: 100px;
+    float:left;
+    margin-left: 100px;
+}
+.logo{
+    color: var(--logo-color);
+    font-size: 50px;
+    margin-left: 250px; 
+    padding-top: 30px;
+}
+
+
+/*form 스타일링 */
+.userInfo_container{
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+.userInfo_container form{
+    font-size: 25px;
+}
+
+.userInfo_container form td{
+    padding: 10px;
+}
+
+#ok_btn{
+    height: 30px;
+    width: 150px;
+    background-color: #f21170;
+    border: 1px solid black;
+    border-radius: 4px;
+    color:#fff;
+    float:right;
+    display:block;
+    margin-top: 380px;
+    margin-right: 350px;
+}
+#ok_btn:hover{
+    background: #eeeeee;
+    color: black;
+    border: qpx solid #fff;
+}

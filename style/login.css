@@ -1,0 +1,82 @@
+@import url(./main.css);
+/*grid template 맞추기 */
+body{
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 685px;
+}
+header{
+    grid-column: 2/ 3;
+    grid-row: 2 / 3;
+}
+.inputInfo{
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+}
+
+footer{
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+}
+
+/*header*/
+.logoContainer{
+    border-top: 3px solid #F21170;
+    width: 300px;
+    margin-left:80px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+/*아이디 비밀번호 입력하는 곳*/
+.inputInfo div{
+    color: #fff;
+}
+.idContainer{
+    border-bottom: 2px solid var(--puple-color);
+    font-size: 30px;
+    width: 450px;
+    padding: 10px;
+}
+.idContainer label{
+    border-right: 2px solid var(--puple-color);
+    margin: 10px;
+    padding-right: 31px;
+}
+.pwContainer{
+    padding: 10px;
+}
+.pwContainer label{
+    border-right: 2px solid var(--puple-color);
+    margin: 10px;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.login_btn{
+    height: 30px;
+    width: 300px;
+    background: #AAAAAA;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #fff;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+/*로그인 버튼 눌렀을 때 */
+.login_btn:hover{
+    background: #EEEEEE;
+    color:black;
+    border: 1px solid #fff;
+}
+
+footer a{
+    color:#fff;    
+    margin-left: 80px;
+}

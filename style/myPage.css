@@ -1,6 +1,69 @@
 @import url(./main.css);
-
+body{
+    height: 685px;
+}
 .logo{
     color: var(--logo-color);
     font-size: 50px;
+    margin: 20px;
+}
+.myInfo_container{
+    margin-left: 80px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+}
+.tab{
+    color: #fff;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.tab-content_container{
+    width: 1170px;
+    height: 500px;
+    border: 3px solid var(--puple-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tab:hover{
+    background-color: var(--puple-color);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.hidden{
+    display: none;
+}
+
+.tab-content{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.myInfo{
+    font-size: 20px;
+    
+}
+.myInfo table tr td{
+    padding: 15px;
+}
+.myInfo button{
+    font-size: 18px;
+    width: fit-content;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.myInfo button:hover{
+    background-color: var(--puple-color);
+    
 }

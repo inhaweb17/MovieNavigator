@@ -32,7 +32,9 @@ nav{
     border-radius: 10px;
     overflow: hidden;
 }
-
+.tab-content_container div{
+    overflow: hidden;
+}
 .tab:hover{
     background-color: var(--puple-color);
     color: #fff;
@@ -47,7 +49,7 @@ nav{
     margin-left: 80px;
     margin-top: 50px;
 }
-
+/*나의 정보 */
 .myInfo{
     font-size: 20px;
     
@@ -62,8 +64,47 @@ nav{
     border-radius: 4px;
     border: 1px solid #fff;
     color: #fff;
+    margin-left: 600px;
 }
 .myInfo button:hover{
     background-color: var(--puple-color);
     
+}
+
+/*비밀번호 수정하기 */ 
+.modifyPw {
+    font-size: 20px;
+}
+.modifyPw table tr td{
+    padding: 15px;
+}
+.ok_btn {
+    font-size: 18px;
+    width: fit-content;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 600px;
+}
+.ok_btn:hover{
+    background-color: var(--puple-color);
+}
+
+/*좋아요 리스트*/
+.movie_list_list{
+    
+}
+.like{
+    display: inline-flex;
+    flex-direction: row;
+}
+.like img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+}
+.title{
+    color: #fff;
+    display: inline;
 }

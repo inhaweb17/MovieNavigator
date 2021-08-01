@@ -1,0 +1,36 @@
+@import url(./main.css);
+body{
+    height:fit-content;
+}
+.logo{
+    color:var(--logo-color);
+    font-size: 50px;
+    margin: 20px;
+}
+
+.nowMovie_container p {
+    font-size: 20px;
+    margin: 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/*js로 생성된 요소들 관련 css */
+.nowMovie{
+    width:1200px;
+    height:350px;
+    border: 1px solid var(--puple-color);
+    margin: 20px;
+}
+.count{
+    border-right: 1px solid var(--puple-color);
+}
+.nowMovie img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 300px;
+}
+.nowMovie p {
+    font-size: 15px;
+}

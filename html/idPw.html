@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="이자선">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디, 비밀번호 찾기</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/idPw.css">
+</head>
+<body>
+<div class="body__container">
+    <header>
+        <img src="../img/light.svg">
+        <div class="logo">MNavigator</div>
+    </header>
+
+    <section class="idFind">
+        <p>아이디 찾기</p>
+        <div class="id_container">
+            <form class="idFindform" action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" id="user_name" name="user_name"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td><input type="email" id="user_id" name="user_id"></td>
+                    </tr>
+                </table>
+                <input type="submit" class="ok_btn1" value="확인">
+            </form>
+            <div class="idResult">
+                <p>아이디:</p>
+                <p class="result">아이디결과</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pwFind">
+        <p>비밀번호 찾기</p>
+        <div class="pw_container">
+            <form class="pwFindform" action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" id="user_id" name="user_id"></td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td><input type="number" id="user_number" name="user_number" placeholder="-없이 입력해주세요"></td>
+                    </tr>
+                </table>
+                <input type="submit" class="ok_btn2" value="확인"> 
+            </form>
+            <div class="pwResult">
+                <p>비밀번호:</p>
+                <p class="result">비밀번호 결과 표기</p>
+            </div>
+        </div>
+        
+    </section>
+</div>
+<script src="../js/goHome.js"></script>
+</body>
+</html>

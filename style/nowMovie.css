@@ -17,15 +17,20 @@ body{
 
 /*js로 생성된 요소들 관련 css */
 .nowMovie{
-    width:1200px;
-    height:350px;
+    width:90%;
     border: 1px solid var(--puple-color);
     margin: 20px;
+    display:flex;
+    flex-direction: row;
+    flex: 1, 3, 5;
 }
 .count{
+    margin-top: 50px;
+    padding-right: 10px;
     border-right: 1px solid var(--puple-color);
 }
-.nowMovie img{
+
+.poster img{
     width: auto;
     height: auto;
     max-width: 150px;

@@ -50,19 +50,15 @@ const showNow = (nowMovie_list, movie_list) => {
             let div = document.createElement('div');
             div.classList.add('nowMovie');
             div.innerHTML = `
-            <table>
-                <tr>
-                    <td class="count">${count}</td>
-                    <td><img src='${e.poster}'></td>
-                    <td class="info">
-                        <p>영화 제목${e.title}</p>
-                        <p>제작사: ${e.company}</p>
-                        <p class="plot">줄거리: ${e.plot}</p>
-                        <p>출현진들: ${e.actorNm}</p>
-                        <p>영화평점들: ${e.movieGrade}</p>
-                    </td>
-                </tr>
-            </table>
+            <p class="count">${count}</p>
+            <p class="poster"><img src='${e.poster}'></p>
+            <div class="info">
+                <p>영화 제목${e.title}</p>
+                <p>제작사: ${e.company}</p>
+                <p class="plot">줄거리: ${e.plot}</p>
+                <p>출현진들: ${e.actorNm}</p>
+                <p>영화평점들: ${e.movieGrade}</p>
+            </div>
             `;
             nowMovie_list.appendChild(div);
             count += 1;

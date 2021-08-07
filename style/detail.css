@@ -36,3 +36,31 @@
     max-width: 50px;
     max-height: 50px;
 }
+
+/*별점 관련 */ 
+.stars{
+    width: 270px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.stars .star{
+    width: 48px;
+    height: 48px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.star.empty{
+    background: url("../img/star-empty.svg") no-repeat;
+}
+.star.half{
+    background: url('../img/star-half.svg') no-repeat;
+}
+.star.full{
+    background: url('../img/star-full.svg') no-repeat;
+}
+
+.point{
+    color:#fff;
+    font-size: 25px;
+}

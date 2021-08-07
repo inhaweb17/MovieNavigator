@@ -21,8 +21,7 @@ const showDetail = (movieInfo) => {
 
     
     document.addEventListener('DOMContentLoaded', () => {
-        poster.innerHTML = `
-        <img src='${movieInfo.poster}' alt="포스터">
+        poster.innerHTML = `<img src='${movieInfo.poster}' alt="포스터">
         `;
         movieInfoContainer.innerHTML = `
         <table>

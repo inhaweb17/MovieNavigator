@@ -16,28 +16,28 @@
     </header>
     <div class="container">
         <section class="movieContainer">
-            <div class="movie">
-                <div clas="mposter"> </div>
-                <div class="movieInfoContainer"></div>
-                <div class="gradeInfo">
-                    <div class="grade"> <!--해당 영화 평점 표기할 곳-->
-                        <img src="../img/star-full.svg">
-                    </div>
-                    <div class="like"> <!--영화 추천 수 표기 할 곳-->
-                        <img src="../img/good.svg">
-                    </div>
+                <!--poster이미지 들어갈 곳 -->
+            <div class="mposter"> </div>
+                <!--영화 상세 정보들어갈 곳-->
+            <div class="movieInfoContainer"></div>
+            <div class="gradeInfo">
+                <div class="grade"> <!--해당 영화 평점 표기할 곳-->
+                    <img src="../img/star-full.svg">
                 </div>
+                <div class="like"> <!--영화 추천 수 표기 할 곳-->
+                    <img src="../img/good.svg">
+                </div>
+            </div>
 
-                <div class="starGrade">
-                    <div class="stars"> <!--별 5개 모양이 표기 될 곳-->
+            <div class="starGrade">
+                <div class="stars"> <!--별 5개 모양이 표기 될 곳-->
 
-                    </div>
-                    <div class="point"> <!--별에 따라서 점수가 기록 될 곳-->
+                </div>
+                <div class="point"> <!--별에 따라서 점수가 기록 될 곳-->
 
-                    </div>
+                </div>
                     <!--해당 버튼 클릭시 별점저장-->
-                    <button class="submitGrade">별점 주기</button>
-                </div>
+                <button class="submitGrade">별점 주기</button>
             </div>
         </section>
     
@@ -45,7 +45,7 @@
             <div clas="reviewInput">
                 <form class="reivew">
                     <input type="text" id="reviewText" name="reviewText">
-                    <input type="submit" value="입력">
+                    <input type="submit" class="reviewBtn" value="입력">
                 </form>
                 <div class="sort_container">
                     <select id="sort">

@@ -12,42 +12,48 @@ const movieInfo = {
     poster:'../img/movie_poster1.jpg',
     movieLike: '385'
 }
-const poster = document.querySelector('.mposter');
+const posterContainer = document.querySelector('.mposter');
 const movieInfoContainer = document.querySelector('.movieInfoContainer');
 const grade = document.querySelector('.grade');
 const like = document.querySelector('.like');
 
-const showDetail = (movieInfo) => {
+const p = document.createElement('img');
+p.setAttribute('src', movieInfo.poster);
+p.className = 'detailPoster';
 
-    
-    document.addEventListener('DOMContentLoaded', () => {
-        poster.innerHTML = `<img src='${movieInfo.poster}' alt="포스터">
-        `;
-        movieInfoContainer.innerHTML = `
-        <table>
-        <tr>
-            <td>${movieInfo.title}</td>
-            <td>${movieInfo.genre}</td>
-        </tr>
-        <tr>
-            <td>관람등급: ${movieInfo.rating}</td>
-            <td>개봉일: ${movieInfo.openDt}</td>
-            <td>러닝타임: ${movieInfo.runtime}</td>
-        </tr>
-        <tr>
-            <td>제작사: ${movieInfo.company}</td>
-            <td>감독명: ${movieInfo.directorNm}</td>
-            <td>배우명: ${movieInfo.actorNm}</td>
-        </tr>
-        <tr>
-            <td>줄거리: ${movieInfo.plot}</td>
-        </tr>
-        </table>
-        `;
-        grade.innerText = `${movieInfo.movieGrade}`;
-        like.innerText = `${movieInfo.movieLike}`;
-    
-    });
-}
+posterContainer.appendChild(p);
 
-showDetail(movieInfo);
+movieInfoContainer.innerHTML = `
+<table>
+<tr>
+    <td>${movieInfo.title}</td>
+</tr>
+<tr>
+    <td>러닝타임: ${movieInfo.runtime}</td>
+</tr>
+<tr>
+    <td>관람등급: ${movieInfo.rating}</td> 
+</tr>
+<tr>
+    <td>개봉일: ${movieInfo.openDt}</td>
+</tr>
+<tr>
+    <td>러닝타임: ${movieInfo.runtime}</td>
+</tr>
+<tr>
+    <td>제작사: ${movieInfo.company}</td>
+</tr>
+<tr>
+    <td>감독명: ${movieInfo.directorNm}</td>
+</tr>
+<tr>
+    <td>배우명: ${movieInfo.actorNm}</td>
+</tr>
+<tr>
+    <td class="plot">줄거리: ${movieInfo.plot}</td>
+</tr>
+</table>
+`;
+grade.innerText = `${movieInfo.movieGrade}`;
+like.innerText = `${movieInfo.movieLike}`;
+

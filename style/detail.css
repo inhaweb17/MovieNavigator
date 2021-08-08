@@ -5,15 +5,31 @@
     color: var(--logo-color);
 }
 
+/*배치 관련 */
 .container{
     border: 3px solid var(--puple-color);
     border-radius: 10px;
     margin: 30px;
     width: 95%;
     height:fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
 }
 
-.poster img{
+.movieContainer{
+    display: grid;
+    grid-template-columns: 20px 300px 1000px;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.mposter{
+    grid-column: 2 / 3;
+}
+.movieInfoContainer{
+    grid-column: 3 / 4;
+}
+.mposter img{
     width: auto;
     height: auto;
     max-width: 200px;
@@ -23,7 +39,10 @@
     border-radius: 5px;
     width: 40%;
 }
-
+.plot {
+    width: 650px;
+    word-wrap: break-word;
+}
 .grade img{
     width: auto;
     height: auto;
@@ -63,4 +82,29 @@
 .point{
     color:#fff;
     font-size: 25px;
+}
+
+.submitGrade{
+    background: var(--background-color);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submitGrade:hover{
+    background: var(--puple-color);
+    
+}
+
+/*리뷰 요소들 */ 
+.reviewBtn {
+    background: var(--background-color);
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.reviewBtn:hover{ 
+    background: var(--puple-color);
 }

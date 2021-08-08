@@ -1,7 +1,7 @@
 //detail.html에서 별점주기 애니메이션 구현
 const stars = document.querySelector('.stars');
 const point = document.querySelector('.point');
-const submitGrade = document.querySelector('.submitGrade');
+const submitGradeBtn = document.querySelector('.submitGrade');
 
 const MAX_SCORE = 5; //별은 최대 5개
 
@@ -55,6 +55,11 @@ function fillStar(star_index){
     point.innerText  = state.score;
 }
 
+//버튼클릭 했을 때에 유저가 입력한 별점 서버로 전송하기 
+function submitGrade () {
+
+}
+
 //별 클릭했을 때에 event발생
 stars.addEventListener('click', (e) => {
     fillStar(calcuateScore(e));
@@ -71,3 +76,4 @@ stars.addEventListener('mouseleave', (e) => {
     point.textContent = state.score;
 });
 
+submitGradeBtn.addEventListener('click', submitGrade);

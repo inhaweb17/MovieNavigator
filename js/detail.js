@@ -54,6 +54,12 @@ movieInfoContainer.innerHTML = `
 </tr>
 </table>
 `;
-grade.innerText = `${movieInfo.movieGrade}`;
-like.innerText = `${movieInfo.movieLike}`;
+grade.innerHTML = `
+<img src="../img/star-full.svg">
+<p>${movieInfo.movieGrade}</p>
+`;
+like.innerHTML = `
+<img src='../img/good.svg'><p>${movieInfo.movieLike}</p>
+`;
+
 

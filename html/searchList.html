@@ -8,6 +8,7 @@
     <title>검색화면</title>
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/searchList.css">
 </head>
 <body>
     <header>
@@ -16,8 +17,8 @@
 
     <section class="search_box">
         <p>#검색 결과</p>
-        <div>
-            <img src="../img/search.svg">
+        <div class="searchContainer">
+            <img id="searchicon" src="../img/search.svg">
             <input class="movie_search" type="search" placeholder="영화검색하기"/>
             <span><button class="s_submit">검색</button></span>   
         </div>
@@ -28,5 +29,6 @@
     </section>
     
     <script src="../js/goHome.js"></script>
+    <script src="../js/searchList.js"></script>
 </body>
 </html>

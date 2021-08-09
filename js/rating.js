@@ -48,7 +48,10 @@ function fillStar(star_index){
     });
     if(star_index > 5){
         state.score = 5;
-    }else{
+    }else if(star_index < 0){
+        state.score = 0;
+    }
+    else{
         state.score = star_index;
     }
     //point표기 하는 곳에 현재 score 나타내기 

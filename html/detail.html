@@ -22,10 +22,10 @@
             <div class="movieInfoContainer"></div>
             <div class="gradeInfo">
                 <div class="grade"> <!--해당 영화 평점 표기할 곳-->
-                    <img src="../img/star-full.svg">
+                    
                 </div>
                 <div class="like"> <!--영화 추천 수 표기 할 곳-->
-                    <img src="../img/good.svg">
+                    
                 </div>
             </div>
 
@@ -34,30 +34,33 @@
 
                 </div>
                 <div class="point"> <!--별에 따라서 점수가 기록 될 곳-->
-
+                    0
                 </div>
                     <!--해당 버튼 클릭시 별점저장-->
                 <button class="submitGrade">별점 주기</button>
+                <button class="submitLike">추천 하기</button>
             </div>
         </section>
     
         <section class="reviewContainer">
-            <div clas="reviewInput">
+            <div class="reviewInput">
                 <form class="reivew">
+                    <label for="reviewText">리뷰 작성하기</label>
                     <input type="text" id="reviewText" name="reviewText">
                     <input type="submit" class="reviewBtn" value="입력">
                 </form>
                 <div class="sort_container">
+                    <label for="sort">리뷰정렬</label>
                     <select id="sort">
                         <option>추천순</option>
                         <option>최신순</option>
                     </select>
                 </div>
-
-                <div class="reivewList">
-
-                </div>
             </div>
+                <div class="reviewList">
+                    <div class="review">리뷰내용 예제</div>
+                    <div class="reivew">리뷰</div>
+                </div>
         </section>
 
     </div>

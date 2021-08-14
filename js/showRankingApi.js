@@ -23,5 +23,27 @@ let time = (function() {
     }, ... 10등까지 존재 
 ]
 */ 
-
-
+const reqRank =
+fetch(`${url}?key=${key}&targetDt=${time}`);
+reqRank.then(res => {
+    if(res.status >= 200 && res.status < 300){
+        return res.json();
+    }else{
+        return Promise.reject(new Error('rank api error'));
+    }
+})
+.then(res=> {
+    let rankList =res.boxOfficeResult.dailyBoxOfficeList;
+    console.log(rankList);
+})
+/*
+fetch(`${url}?key=${key}&targetDt=${time}`)
+.then(function(res){
+    return res.json();
+})
+.then(function(res){
+    let rankList = res.boxOfficeResult.dailyBoxOfficeList;
+    console.log(rankList);
+    
+})
+*/

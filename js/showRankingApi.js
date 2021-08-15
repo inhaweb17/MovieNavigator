@@ -34,16 +34,76 @@ reqRank.then(res => {
 })
 .then(res=> {
     let rankList =res.boxOfficeResult.dailyBoxOfficeList;
-    console.log(rankList);
-})
-/*
-fetch(`${url}?key=${key}&targetDt=${time}`)
-.then(function(res){
-    return res.json();
-})
-.then(function(res){
-    let rankList = res.boxOfficeResult.dailyBoxOfficeList;
+    showRanking(rankList);
     console.log(rankList);
     
 })
-*/
+
+//표기할 element들 
+
+const leftBtn = document.querySelector('.left_btn');
+const rightBtn = document.querySelector('.right_btn');
+const p0 = document.querySelector('.p0');
+const p1 = document.querySelector('.p1');
+const p2 = document.querySelector('.p2');
+const p3 = document.querySelector('.p3');
+const p4 = document.querySelector('.p4');
+
+const posterList = [p0, p1, p2, p3,p4];
+let p_index = [0,1,2,3,4];
+
+const showRanking = (rankList) => {
+    
+    for(let i = 0; i <posterList.length; i ++){
+        posterList[i].innerHTML = `
+        <img src='#'
+        alt = '${rankList[i].movieNm}${rankList[p_index[i]].rank}st'
+        class = 'poster${rankList[i].rank}' />
+        `
+    };
+
+    leftBtn.onclick = () => {
+        for(let i = 0; i< 5; i++){
+            p_index[i] = plus(p_index[i]);
+        }
+        for(let i = 0; i< 5; i++){
+            posterList[i].innerHTML = `
+            <img src="#"
+            alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
+            class = 'poster${rankList[p_index[i]].rank}' />
+            `
+        }
+    }
+
+    rightBtn.onclick = () => {
+        for(let i =0; i<5; i++) {
+            p_index[i] = minus(p_index[i]);
+        }
+        for(let i =0; i< 5; i++){
+            posterList[i].innerHTML = `
+            <img src="#"
+            alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
+            class = 'poster${rankList[p_index[i]].rank}' />
+            `
+        }
+    }
+
+    function plus(e) {
+        if (e == 9) {
+            e = 0;
+        }else {
+            e += 1;
+        }
+        return e;
+    }
+
+    function minus(e) {
+        if (e == 0){
+            e = 9;
+        }else {
+            e -= 1;
+        }
+        return e;
+    }
+
+}

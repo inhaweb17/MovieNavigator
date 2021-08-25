@@ -1,0 +1,14 @@
+@import url(color.css);
+.body_container{
+    width: 1336px;
+    height: 1400px;
+    background-color: var(--background-color);
+}
+
+.logo > strong{
+    display: block;
+    font-size: 24px;
+    color: var(--font);
+    letter-spacing: -0.02em;
+    text-shadow: -2px 4px 0.2em #000000;
+}   

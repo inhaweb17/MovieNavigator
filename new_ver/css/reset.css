@@ -349,3 +349,10 @@
   [hidden] {
     display: none;
   }
+
+
+  /*font 설정 */
+
+  html{
+    font-family: 'Noto-Sans KR', sans-serif;
+  }

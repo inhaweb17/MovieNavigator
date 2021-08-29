@@ -5,7 +5,10 @@ body{
     
 }
 /*header */
-
+.ic-heart{
+	width: 50px;
+	height: auto;
+}
 .logo{
     position: relative;
 }

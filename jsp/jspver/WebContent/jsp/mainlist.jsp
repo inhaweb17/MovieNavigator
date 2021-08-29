@@ -9,6 +9,7 @@
     <title>MovieNavigator</title>
     <link rel="stylesheet" href="../css/reset.css" type="text/css">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/fonts.css" type="text/css">
     <link rel="stylesheet" href="../css/mainlist.css" type="text/css">
     <script src="../js/mainlist.js"></script>
     <script src="../js/goHome.js"></script>
@@ -19,6 +20,7 @@
 	<header>
         <div class="header_container">
             <div id="logo">MNavigator</div>
+            <i class="ic-heart" style="font-size: 50px;"></i>
             <button class="login_btn">LOG IN</button>
             <button class="mypage_btn">MY PAGE</button>
         </div>       

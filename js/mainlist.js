@@ -35,6 +35,6 @@ const myPage = document.querySelector('.mypage_btn');
 let login = true;
 myPage.addEventListener("click", () =>{
     login ?
-    location.href='../html/myPage.html' :
+    location.href='../html/myPage.html':
     location.href='../html/login.html';
 });

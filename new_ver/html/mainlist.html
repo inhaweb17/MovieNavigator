@@ -18,12 +18,14 @@
 <body>
     <div class="body_container">
         <header>
-            <i class="ic-genre_movie" style="font-size: 50px;"></i>
             <section class="searchbox">
                 <form action="#" method="GET">
                     <input class="search" id="search" type="search" placeholder="검색">
                     <label for="search">
-                        <input class="search-btn" alt="검색버튼" type="submit" value="검색">
+                        <button type="submit" class="search_btn" alt="검색버튼">
+                            <i class="ic-search"></i>
+                        </button>
+                        
                     </label> 
                 </form>
             </section>
@@ -41,14 +43,19 @@
             </section>
 
         </header>
+
         <article class="movie-rank">
             <section class="movieList">
-                <button class="left_btn">
-                    <
-                </button>
-                <div class="movies1">
 
+                <button class="left_btn">
+                    <i class="ic-left_btn_new"></i>
+                </button>
+
+                <div class="movies1">
+                    <div class="p0"></div>
+                    <div class="p1"></div>
                 </div>
+
                 <div class="logo">
                     <strong>
                         Movie
@@ -57,11 +64,14 @@
                         Navigator
                     </strong>
                 </div>
-                <div class="movies2">
 
+                <div class="movies2">
+                    <div class="p2"></div>
+                    <div class="p3"></div>
                 </div>
+
                 <button class="right_btn">
-                    >
+                    <i class="ic-right_btn_new"></i>
                 </button>
             </section>
         </article>
@@ -71,19 +81,21 @@
             <section class="categorybox">
 
                 <div class="readymovie">
-                    <img src="" alt="개봉예정작" class="readymovie-img">
-                    <div class="readmovie-link">
-                        <a href=""></a>
+                    <i class="ic-now_movie"></i>
+                    <div class="readymovie-link">
+                        <a href="" alt="개봉예정작">#개봉예정작</a>
                     </div>
                 </div>
 
                 <div class="genremovie">
-                    <img src="" alt="장르별보기" class="genremovie-img">
+                    <i class="ic-genre_movie"></i>
                     <div class="genremovie-link">
-                        <a href=""></a>
+                        <a href=""alt="장르별 보기">#장르별보기</a>
                     </div>
                 </div>
+
             </section>
+            
         </article>
 
         <article class="review-list">
@@ -102,5 +114,7 @@
 
         </footer>
     </div>
+    <script src="../js/mainlist.js"></script>
+    <script src="../js/movieLank.js"></script>
 </body>
 </html>

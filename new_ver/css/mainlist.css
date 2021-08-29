@@ -1,10 +1,95 @@
 @import url(color.css);
+
 .body_container{
-    width: 1336px;
+    width: 100%;
     height: 1400px;
     background-color: var(--background-color);
 }
 
+/*header부분 style */
+
+header{
+    margin-left: 60px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    margin-top: 10px;
+    padding: 2px 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 20px;
+    transition: width 0.4s ease-in-out;
+    border-style: none;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border);
+}
+
+.search:focus{
+    width: 150px;
+}
+
+.search_btn{
+    background-color: var(--background-color);
+    border-style: none;
+}
+.ic-search:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.userbox{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    color: #fff;
+}
+
+.userbox div{
+    font-size: 13px;
+}
+
+.userbox div:hover{
+    cursor:pointer;
+}
+
+
+/*rank 부분 */
+
+.movieList {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 1px;
+    gap: 3px;
+}
+.movieList button{
+    background-color: var(--background-color);
+    border:none;
+}
+.movieList button:hover{
+    cursor: pointer;
+}
+.movieList i{
+    color : #fff;
+    font-size: 35px;
+}
+.movieList i:hover{
+    color: var(--point);
+}
+
+.logo{
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .logo > strong{
     display: block;
     font-size: 24px;
@@ -12,3 +97,70 @@
     letter-spacing: -0.02em;
     text-shadow: -2px 4px 0.2em #000000;
 }   
+
+.movies1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.movies2{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.p0{
+    width: 150px;
+    height: 210px;
+    border: 1px solid var(--border);
+}
+.p1{
+    width: 150px;
+    height: 210px;
+    border: 1px solid var(--border);
+}
+.p2{
+    width: 150px;
+    height: 210px;
+    border: 1px solid var(--border);
+}
+.p3{
+    width: 150px;
+    height: 210px;
+    border: 1px solid var(--border);
+}
+
+/*카테고리 부분 */
+
+.categorybox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    border: 2.5px solid var(--border);
+    border-style: groove;
+    width: fit-content;
+    padding: 15px;
+}
+
+
+.readymovie{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ic-now_movie{
+    font-size: 30px;
+}
+
+.genremovie{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 60px;
+}
+
+.ic-genre_movie{
+    font-size: 30px;
+}

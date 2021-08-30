@@ -60,6 +60,7 @@ const showRanking = (rankList) => {
         <img src='#'
         alt = '${rankList[i].movieNm}${rankList[p_index[i]].rank}st'
         class = 'poster${rankList[i].rank}' />
+        <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
         `
     };
 
@@ -72,6 +73,7 @@ const showRanking = (rankList) => {
             <img src="#"
             alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
             class = 'poster${rankList[p_index[i]].rank}' />
+            <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
             `
         }
     }
@@ -85,6 +87,7 @@ const showRanking = (rankList) => {
             <img src="#"
             alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
             class = 'poster${rankList[p_index[i]].rank}' />
+            <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
             `
         }
     }

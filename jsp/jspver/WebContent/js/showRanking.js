@@ -1,9 +1,6 @@
-/**
- * 
- */
-
 const url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json';
 const key = '08fe9327eb466a04a4592345c7c94ee0';
+
 
 // 현재날짜구하기 
 let now = new Date();
@@ -51,10 +48,10 @@ const p0 = document.querySelector('.p0');
 const p1 = document.querySelector('.p1');
 const p2 = document.querySelector('.p2');
 const p3 = document.querySelector('.p3');
-const p4 = document.querySelector('.p4');
 
-const posterList = [p0, p1, p2, p3,p4];
-let p_index = [0,1,2,3,4];
+
+const posterList = [p0, p1, p2, p3];
+let p_index = [0,1,2,3];
 
 const showRanking = (rankList) => {
     
@@ -63,32 +60,35 @@ const showRanking = (rankList) => {
         <img src='#'
         alt = '${rankList[i].movieNm}${rankList[p_index[i]].rank}st'
         class = 'poster${rankList[i].rank}' />
-        `;
+        <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
+        `
     };
 
     leftBtn.onclick = () => {
-        for(let i = 0; i< 5; i++){
+        for(let i = 0; i< 4; i++){
             p_index[i] = plus(p_index[i]);
         }
-        for(let i = 0; i< 5; i++){
+        for(let i = 0; i< 4; i++){
             posterList[i].innerHTML = `
             <img src="#"
             alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
             class = 'poster${rankList[p_index[i]].rank}' />
-            `;
+            <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
+            `
         }
     }
 
     rightBtn.onclick = () => {
-        for(let i =0; i<5; i++) {
+        for(let i =0; i<4; i++) {
             p_index[i] = minus(p_index[i]);
         }
-        for(let i =0; i< 5; i++){
+        for(let i =0; i< 4; i++){
             posterList[i].innerHTML = `
             <img src="#"
             alt = '${rankList[p_index[i]].movieNm}${rankList[p_index[i]].rank}st'
             class = 'poster${rankList[p_index[i]].rank}' />
-            `;
+            <p class="rankInfo">#${rankList[p_index[i]].rank}</p>
+            `
         }
     }
 

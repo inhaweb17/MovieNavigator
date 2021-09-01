@@ -11,6 +11,8 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+
+    font-family: 'Noto-Sans KR', sans-serif;
   }
   
   /* Sections
@@ -348,11 +350,4 @@
   
   [hidden] {
     display: none;
-  }
-
-
-  /*font 설정 */
-
-  html{
-    font-family: 'Noto-Sans KR', sans-serif;
   }

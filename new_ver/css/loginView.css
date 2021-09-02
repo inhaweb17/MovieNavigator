@@ -20,7 +20,6 @@ header{
 }
 @keyframes pointAni{
     0% {background-color: #3D087B; width: 70px}
-    
     100% {background-color: var(--point); width: 120px;}
 }
 .point{
@@ -51,11 +50,63 @@ header{
 .loginForm{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    font-size: 18px;
 }
 
+.id{
+    margin-bottom: 10px;
+}
 
+.idlabel{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.user_id{
+    margin-left: 40px;
+    font-size: 8px;
+    border-style: none;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border);
+}
+
+.pwlabel{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+}
+.user_pwd{
+    font-size: 3px;
+    margin-left: 25px;
+    font-size: 8px;
+    border-style: none;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border);
+}
+.ok_btn{
+     width: 220px;
+     background-color: var(--background-color);
+     color: #fff;
+     border: 2px solid var(--border);
+     border-radius: 10px;
+     font-size: 15px;
+     margin-top: 40px;
+}
+
+.ok_btn:hover{
+    background-color: var(--point);
+}
 /*링크 들 */
 .linkForm{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+}
+
+.linkForm a{
+    font-size: 14px;
+    margin: 15px;
+    color: var(--border);
 }

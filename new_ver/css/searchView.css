@@ -70,9 +70,13 @@ header{
 .resultContainer{
     margin-top: 80px;
     padding-bottom: 50px;
-    margin-left: 80px;
+    
 }
 
+.resultContainer section{
+    display: flex;
+    justify-content: center;
+}
 .movieResult{
     width: 80%;
     height:fit-content;

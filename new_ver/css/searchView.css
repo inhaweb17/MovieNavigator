@@ -1,0 +1,82 @@
+@import url(color.css);
+
+.body_container{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}
+
+.point{
+    width: 15px;
+    height: 100px;
+    background-color:var(--point);
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.logo > strong{
+    margin-top: 10px;
+    display: block;
+    font-size: 24px;
+    color: var(--font);
+    letter-spacing: -0.02em;
+    text-shadow: -2px 4px 0.2em #000000;
+}   
+
+.title{
+    color:#fff;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-shadow: -2px 4px 0.2em #000000;
+}
+
+.searchContainer{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.search{
+    background-color: var(--background-color);
+    border-style: none;
+    border-bottom: 2px solid var(--border);
+    font-size: 20px;
+    width: 300px;
+}
+
+.ok_btn{
+    border-style: none;
+    background-color: var(--background-color);
+}
+
+.ic-search{
+    color: #fff;
+    font-size: 25px;
+}
+
+.ic-search:hover{
+    color: var(--point);
+}
+
+/*영화결과화면들*/
+
+.resultContainer{
+    margin-top: 80px;
+    padding-bottom: 50px;
+    margin-left: 80px;
+}
+
+.movieResult{
+    width: 80%;
+    height:fit-content;
+    padding: 20px;
+    border: 3px solid var(--border);
+    border-radius: 10px;
+}

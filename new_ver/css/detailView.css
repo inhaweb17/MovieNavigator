@@ -1,0 +1,143 @@
+@import url(color.css);
+
+.body_container{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}
+
+.point{
+    width: 15px;
+    height: 100px;
+    background-color:var(--point);
+}
+
+.logo{
+    margin-left: 20px;
+}
+
+.logo > strong{
+    margin-top: 10px;
+    display: block;
+    font-size: 24px;
+    color: var(--font);
+    letter-spacing: -0.02em;
+    text-shadow: -2px 4px 0.2em #000000;
+}   
+
+.title{
+    color:#fff;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-shadow: -2px 4px 0.2em #000000;
+}
+
+/*영화 상세정보들 */ 
+.movieInfo{
+    background-color: #000;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+/*영화 별점 매기기 */
+
+.moviePoint{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.sub_title{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.starForm{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.starContainer{
+    width: 330px;
+    height: fit-content;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-right: 50px;
+    padding: 5px;
+}
+
+.starContainer i{
+    font-size: 50px;
+    padding: 5px;
+    color: var(--point);
+}
+
+.pointContainer{
+    width: 20px;
+    height: 30px;
+    padding: 2px;
+    color: #fff;
+    margin-right: 60px;
+}
+
+
+.review_input{
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    width: 600px;
+    height: 80px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.review_submit{
+    background-color: var(--background-color);
+    border: 1px solid var(--border);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.review_submit:hover{
+    background-color: var(--point);
+}
+
+/*리뷰리스트*/ 
+
+.reviewInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reivewtitle{
+    font-size: 20px;
+    color:#fff;
+}
+.review_list{
+    height: fit-content;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;;
+}

@@ -1,0 +1,79 @@
+@import url(color.css);
+.body_container{
+    width: 100%;
+    height: 800px;
+    background-color: var(--background-color);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+}
+.point{
+    width: 5px;
+    height: 100px;
+    background-color: var(--point);
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.logo > strong{
+    margin-top: 10px;
+    display: block;
+    font-size: 24px;
+    color: var(--font);
+    letter-spacing: -0.02em;
+    text-shadow: -2px 4px 0.2em #000000;
+} 
+
+.subtitle{
+    font-size: 18px;
+    color : #fff;
+    margin-left: 30px;
+    margin-top: 55px;
+}
+
+/*비밀번호 바꾸기 내용 부분*/
+
+.pwChangeContainer{
+    padding-left: 50px;
+}
+
+.changePWContainer{
+    width: 80%;
+    height: fit-content;
+    border:1px solid var(--border);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.pwForm div{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.pwForm label{
+    margin-right: 50px;
+}
+
+.pwForm input{
+    background-color: var(--background-color);
+    border-style: none;
+    border-bottom: 1px solid var(--border);
+}
+
+.pwbutton{
+    font-size: 16px;
+    color : #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    padding: 8px;
+}
+
+.pwbutton:hover{
+    background-color: var(--point);
+}
